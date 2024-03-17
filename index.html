@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <form action="#" >
+      <div id="champ">
+        <div id="champdesvaleur"> 
+          <label for="jour" id="label">DAY</label>
+          <input type="number" name="jour" id="jour" required maxlength="2" min="01" max="31" placeholder="DD">
+          <p id="textErrorVide" class="textError" hidden>This field is required </p>
+          <p id="textErrorInvalide" class="textError" hidden>Must be a valid day </p>
+        </div>
+
+        <div id="champdesvaleur"> 
+          <label for="mois" id="label"> MONTH</label>
+          <input type="number" name="mois" id="mois" maxlength="2" min="01" max="13" placeholder="MM">
+          <p id="textErrorVide" class="textError" hidden>This field is required </p>
+          <p id="textErrorInvalide" class="textError" hidden>Must be a valid month </p>
+        </div>
+
+        <div id="champdesvaleur"> 
+          <label for="annee" id="label">YEAR</label>
+          <input type="number" name="annee" id="annee" required maxlength="4" min="0000" max="9999" placeholder="YYYY">
+          <p id="textErrorVide" class="textError" hidden>This field is required </p>
+          <p id="textErrorInvalide" class="textError" hidden>Must be in the past </p>
+        </div>
+      </div>  
+        <div id="divenvoyer">
+         <hr>
+          <button type="submit" id="envoyer"><img src="./assets/images/icon-arrow.svg" alt="icon"> </button>
+        </div>
+     </form>
+     
+      <div id="divresultat">
+        <p> <span id="nbrannees">--</span> years</p>
+        <p> <span id="nbrmois">--</span> months</p>
+        <p> <span id="nbrjours">--</span> days</p>
+      </div>
+    
+    
+    
+  </section>
+ <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./app.js">
+
+  </script>
+ </footer>
+</body>
+</html>

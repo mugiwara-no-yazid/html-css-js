@@ -1,0 +1,108 @@
+@font-face {
+    font-family:Poppins-Bold ;
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family:Poppins-ExtraBold ;
+    src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family:Poppins-Italic ;
+    src: url(./assets/fonts/Poppins-Italic.ttf);
+}
+*
+{
+    margin: 0;
+}
+body
+{
+    background-color:  hsl(0, 0%, 94%);
+}
+#divresultat
+{
+    display: flex;
+    flex-direction: column;
+
+}
+#divresultat p
+{
+    font-family: Poppins-ExtraBold ;
+    font-size: 80px;
+}
+#divresultat p span
+{
+    color: hsl(259, 100%, 65%);
+}
+section
+{
+    margin: 5em auto;
+    background-color:  hsl(0, 0%, 100%);
+    width: 700px;
+    padding: 50px;
+    border-radius: 25px;
+    border-bottom-right-radius: 150px;
+}
+form
+{
+    font-family: Poppins-Bold;
+    font-weight: 400;  
+}
+#champ
+{
+    display: flex;
+}
+#champdesvaleur
+{
+    display: flex;
+    flex-direction: column;
+    color:hsl(0, 1%, 44%);
+    margin: 0 15px;
+}
+#divenvoyer
+{
+   margin: 15px 0;
+   display: flex;
+   justify-content: space-between;
+}
+hr
+{
+    background-color: hsl(0, 0%, 86%);
+}
+input
+{
+    color:hsl(0, 0%, 8%);
+    cursor: pointer;
+    font-size: 32px;
+    font-family: Poppins-Bold;
+    border-radius: 10px;
+
+}
+#textErrorVide,#textErrorInvalide
+{
+    font-family: Poppins-Italic;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.textError
+{
+    color: hsl(0, 100%, 67%);
+}
+.error
+{
+    border-color:hsl(0, 100%, 67%) ;
+}
+#envoyer
+{
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 90px;
+    padding: 10px;
+}
+#envoyer:hover
+{
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
